@@ -50,8 +50,8 @@ Description: Gerold - Personal Portfolio HTML5 Template
 
 	$(document).ready(function ($) {
 		/*------------------------------------------------------
-  	/  Sticky Header
-  	/------------------------------------------------------*/
+		/  Sticky Header
+		/------------------------------------------------------*/
 		var lastScrollTop = 0;
 		$(window).scroll(function () {
 			var scroll = $(window).scrollTop();
@@ -72,8 +72,8 @@ Description: Gerold - Personal Portfolio HTML5 Template
 		});
 
 		/*------------------------------------------------------
-  	/  Hamburger Menu
-  	/------------------------------------------------------*/
+		/  Hamburger Menu
+		/------------------------------------------------------*/
 		$(".menu-bar").on("click", function () {
 			$(".menu-bar").toggleClass("menu-bar-toggeled");
 			$(".header-menu").toggleClass("opened");
@@ -87,8 +87,8 @@ Description: Gerold - Personal Portfolio HTML5 Template
 		});
 
 		/*------------------------------------------------------
-  	/  OnePage Active Class
-  	/------------------------------------------------------*/
+		/  OnePage Active Class
+		/------------------------------------------------------*/
 		$(".header-menu nav ul").onePageNav({
 			currentClass: "current-menu-ancestor",
 			changeHash: false,
@@ -96,8 +96,8 @@ Description: Gerold - Personal Portfolio HTML5 Template
 		});
 
 		/*------------------------------------------------------
-  	/  Portfolio Filter
-  	/------------------------------------------------------*/
+		/  Portfolio Filter
+		/------------------------------------------------------*/
 		$(".portfolio-box").imagesLoaded(function () {
 			var $grid = $(".portfolio-box").isotope({
 				// options
@@ -119,150 +119,22 @@ Description: Gerold - Personal Portfolio HTML5 Template
 			});
 		});
 
-		/*------------------------------------------------------
-  	/  Portfolio Gallery Carousel
-  	/------------------------------------------------------*/
-		$(".portfolio_gallery.owl-carousel").owlCarousel({
-			items: 2,
-			loop: true,
-			lazyLoad: true,
-			center: true,
-			// autoWidth: true,
-			autoplayHoverPause: true,
-			autoplay: false,
-			autoplayTimeout: 5000,
-			smartSpeed: 800,
-			margin: 30,
-			nav: false,
-			dots: true,
-			responsive: {
-				// breakpoint from 0 up
-				0: {
-					items: 1,
-					margin: 0,
-				},
-				// breakpoint from 768 up
-				768: {
-					items: 2,
-					margin: 20,
-				},
-				992: {
-					items: 2,
-					margin: 30,
-				},
-			},
-		});
 
-		/*------------------------------------------------------
-  	/ Testimonial Carousel
-  	/------------------------------------------------------*/
-		$(".testimonial-carousel.owl-carousel").owlCarousel({
-			loop: true,
-			margin: 30,
-			nav: false,
-			dots: true,
-			autoplay: false,
-			active: true,
-			smartSpeed: 1000,
-			autoplayTimeout: 7000,
-			responsive: {
-				0: {
-					items: 1,
-				},
-				600: {
-					items: 2,
-				},
-				1000: {
-					items: 2,
-				},
-			},
-		});
 
-		/*------------------------------------------------------
-  	/ Post Gallery Carousel
-  	/------------------------------------------------------*/
-		$(".tj-post__gallery.owl-carousel").owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 30,
-			dots: false,
-			nav: true,
-			navText: [
-				'<i class="fal fa-arrow-left"></i>',
-				'<i class="fal fa-arrow-right"></i>',
-			],
-			autoplay: false,
-			smartSpeed: 1000,
-			autoplayTimeout: 3000,
-		});
-		/*------------------------------------------------------
-  	/ Brand Slider
-  	/------------------------------------------------------*/
-		if ($(".brand-slider").length > 0) {
-			var brand = new Swiper(".brand-slider", {
-				slidesPerView: 6,
-				spaceBetween: 30,
-				loop: false,
-				breakpoints: {
-					320: {
-						slidesPerView: 2,
-					},
-					576: {
-						slidesPerView: 3,
-					},
-					640: {
-						slidesPerView: 3,
-					},
-					768: {
-						slidesPerView: 4,
-					},
-					992: {
-						slidesPerView: 5,
-					},
-					1024: {
-						slidesPerView: 6,
-					},
-				},
-			});
-		}
 
-		/*------------------------------------------------------
-  	/  Nice Select
-  	/------------------------------------------------------*/
-		$("select").niceSelect();
 
-		/*------------------------------------------------------
-  	/  ALL Popup
-  	/------------------------------------------------------*/
-		if ($(".popup_video").length > 0) {
-			$(`.popup_video`).lightcase({
-				transition: "elastic",
-				showSequenceInfo: false,
-				slideshow: false,
-				swipe: true,
-				showTitle: false,
-				showCaption: false,
-				controls: true,
-			});
-		}
 
-		$(".modal-popup").magnificPopup({
-			type: "inline",
-			fixedContentPos: false,
-			fixedBgPos: true,
-			overflowY: "auto",
-			closeBtnInside: true,
-			preloader: false,
-			midClick: true,
-			removalDelay: 300,
-			mainClass: "popup-mfp",
-		});
+
+
+
+
+
 	});
 
 	$(window).on("load", function () {
 		/*------------------------------------------------------
-  	/  WoW Js
-  	/------------------------------------------------------*/
+		/  WoW Js
+		/------------------------------------------------------*/
 		var wow = new WOW({
 			boxClass: "wow", // default
 			animateClass: "animated", // default
@@ -273,8 +145,8 @@ Description: Gerold - Personal Portfolio HTML5 Template
 		wow.init();
 
 		/*------------------------------------------------------
-  	/  Preloader
-  	/------------------------------------------------------*/
+		/  Preloader
+		/------------------------------------------------------*/
 		const svg = document.getElementById("preloaderSvg");
 		const svgText = document.querySelector(
 			".hero-section .intro_text svg text"
@@ -313,8 +185,8 @@ Description: Gerold - Personal Portfolio HTML5 Template
 		}
 
 		/*------------------------------------------------------
-  	/  Services Hover BG
-  	/------------------------------------------------------*/
+		/  Services Hover BG
+		/------------------------------------------------------*/
 		function service_animation() {
 			var active_bg = $(".services-widget .active-bg");
 			var element = $(".services-widget .current");
@@ -349,8 +221,8 @@ Description: Gerold - Personal Portfolio HTML5 Template
 		});
 
 		/*------------------------------------------------------
-  	/  Portfolio Filter BG Color
-  	/------------------------------------------------------*/
+		/  Portfolio Filter BG Color
+		/------------------------------------------------------*/
 		function filter_animation() {
 			var active_bg = $(".portfolio-filter .button-group .active-bg");
 			var element = $(".portfolio-filter .button-group .active");
@@ -377,8 +249,8 @@ Description: Gerold - Personal Portfolio HTML5 Template
 		}
 
 		/*------------------------------------------------------
-  	/  Funfact
-  	/------------------------------------------------------*/
+		/  Funfact
+		/------------------------------------------------------*/
 		if ($(".odometer").length > 0) {
 			$(".odometer").appear(function () {
 				var odo = $(".odometer");
@@ -389,41 +261,6 @@ Description: Gerold - Personal Portfolio HTML5 Template
 			});
 		}
 
-		// Form Validation
-		/* contact form */
-		if ($("#contact-form").length > 0) {
-			$("#contact-form").validate({
-				rules: {
-					conName: "required",
-					conEmail: {
-						required: true,
-						email: true,
-					},
-				},
 
-				messages: {
-					conName: "Enter your name.",
-					conEmail: "Enter a valid email.",
-				},
-				submitHandler: function (form) {
-					// start ajax request
-					$.ajax({
-						type: "POST",
-						url: "assets/mail/contact-form.php",
-						data: $("#contact-form").serialize(),
-						cache: false,
-						success: function (data) {
-							if (data == "Y") {
-								$("#message_sent").modal("show");
-								$("#contact-form").trigger("reset");
-							} else {
-								$("#message_fail").modal("show");
-							}
-						},
-					});
-				},
-			});
-		}
-		/* !contact form */
 	});
 })(jQuery);
