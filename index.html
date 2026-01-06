@@ -28,6 +28,75 @@
    <link rel="stylesheet" href="assets/css/main.css">
    <link rel="stylesheet" href="assets/css/light-mode.css">
    <link rel="stylesheet" href="assets/css/responsive.css">
+   <style>
+      /* Category Filter Buttons */
+      .portfolio-filter {
+         margin-bottom: 50px;
+      }
+
+      .filter-button-group {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 15px;
+         padding: 0 20px;
+      }
+
+      .filter-button-group button {
+         border: none;
+         padding: 12px 28px;
+         font-size: 15px;
+         font-weight: 600;
+         color: var(--tj-white);
+         background: linear-gradient(135deg,
+               var(--tj-theme-primary) 0%,
+               var(--tj-theme-secondary) 100%);
+         border-radius: 25px;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .filter-button-group button:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 5px 15px rgba(135, 80, 247, 0.4);
+      }
+
+      .filter-button-group button.active {
+         background: linear-gradient(135deg,
+               var(--tj-theme-secondary) 0%,
+               var(--tj-theme-primary) 100%);
+         box-shadow: 0 5px 20px rgba(135, 80, 247, 0.6);
+      }
+
+      /* Mobile Responsive */
+      @media only screen and (max-width: 767px) {
+         .filter-button-group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 0 15px;
+         }
+
+         .filter-button-group button {
+            padding: 10px 16px;
+            font-size: 13px;
+            width: 100%;
+         }
+
+         .portfolio-filter {
+            margin-bottom: 35px;
+         }
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+         .filter-button-group button {
+            padding: 11px 22px;
+            font-size: 14px;
+         }
+      }
+   </style>
 </head>
 
 <body>
@@ -999,6 +1068,22 @@
                   </div>
 
                   <div class="row">
+                     <div class="col-12">
+                        <div class="portfolio-filter text-center wow fadeInUp" data-wow-delay=".5s">
+                           <div class="filter-button-group">
+                              <button class="active" data-filter="*">All</button>
+                              <button data-filter=".ml">Machine Learning</button>
+                              <button data-filter=".dl">Deep Learning</button>
+                              <button data-filter=".data-analysis">Data Analysis</button>
+                              <button data-filter=".python">Python Projects</button>
+                              <button data-filter=".sql">SQL Projects</button>
+                              <button data-filter=".other">Others</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="row">
                      <div class="col-md-12">
 
                         <div class="portfolio-box wow fadeInUp" data-wow-delay=".6s">
@@ -1006,7 +1091,7 @@
                            <div class="gutter-sizer"></div>
 
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item python" data-category="python">
                               <div class="image-box">
                                  <img src="assets/img/project/image_scrapper.webp" alt="" loading="lazy">
                               </div>
@@ -1025,7 +1110,7 @@
 
 
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item dl" data-category="dl">
                               <div class="image-box">
                                  <img src="assets/img/project/land_cover_classification.webp" alt="" loading="lazy">
                               </div>
@@ -1041,7 +1126,7 @@
                            </div>
 
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item data-analysis" data-category="data-analysis">
                               <div class="image-box">
                                  <img src="assets/img/project/ipl_data_analysis.webp" alt="" loading="lazy">
                               </div>
@@ -1057,7 +1142,7 @@
                            </div>
 
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item ml" data-category="ml">
                               <div class="image-box">
                                  <img src="assets/img/project/laptop_price_predictor.webp" alt="" loading="lazy">
                               </div>
@@ -1073,7 +1158,7 @@
                            </div>
 
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item ml" data-category="ml">
                               <div class="image-box">
                                  <img src="assets/img/project/Rainfall.webp" alt="" loading="lazy">
                               </div>
@@ -1088,7 +1173,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item dl" data-category="dl">
                               <div class="image-box">
                                  <img src="assets/img/project/cat_dog.webp" alt="" loading="lazy">
                               </div>
@@ -1103,7 +1188,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item data-analysis" data-category="data-analysis">
                               <div class="image-box">
                                  <img src="assets/img/project/Netflix_dashboard_powerBI.webp" alt="" loading="lazy">
                               </div>
@@ -1119,7 +1204,7 @@
                            </div>
 
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item data-analysis" data-category="data-analysis">
                               <div class="image-box">
                                  <img src="assets/img/project/SuperStore_Dashboard_powerBi.webp" alt="" loading="lazy">
                               </div>
@@ -1134,7 +1219,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item data-analysis" data-category="data-analysis">
                               <div class="image-box">
                                  <img src="assets/img/project/Covid_19_dashboard.webp" alt="" loading="lazy">
                               </div>
@@ -1149,7 +1234,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item ml" data-category="ml">
                               <div class="image-box">
                                  <img src="assets/img/project/slr1.webp" alt="" loading="lazy">
                               </div>
@@ -1164,7 +1249,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item python" data-category="python">
                               <div class="image-box">
                                  <img src="assets/img/project/voice_assistant.webp" alt="" loading="lazy">
                               </div>
@@ -1179,7 +1264,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item ml" data-category="ml">
                               <div class="image-box">
                                  <img src="assets/img/project/house2.webp" alt="" loading="lazy">
                               </div>
@@ -1195,7 +1280,7 @@
                            </div>
 
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item sql" data-category="sql">
                               <div class="image-box">
                                  <img src="assets/img/project/hotel_reservation.webp" alt="" loading="lazy">
                               </div>
@@ -1210,7 +1295,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item sql" data-category="sql">
                               <div class="image-box">
                                  <img src="assets/img/project/pizza.webp" alt="" loading="lazy">
                               </div>
@@ -1224,7 +1309,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item ml" data-category="ml">
                               <div class="image-box">
                                  <img src="assets/img/project/forest.webp" alt="" loading="lazy">
                               </div>
@@ -1239,7 +1324,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item python" data-category="python">
                               <div class="image-box">
                                  <img src="assets/img/project/search_page.webp" alt="" loading="lazy">
                               </div>
@@ -1254,7 +1339,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item python" data-category="python">
                               <div class="image-box">
                                  <img src="assets/img/project/proj_1.webp" alt="" loading="lazy">
                               </div>
@@ -1269,7 +1354,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item data-analysis" data-category="data-analysis">
                               <div class="image-box">
                                  <img src="assets/img/project/proj_2.webp" alt="" loading="lazy">
                               </div>
@@ -1284,7 +1369,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item python" data-category="python">
                               <div class="image-box">
                                  <img src="assets/img/project/proj_3.webp" alt="" loading="lazy">
                               </div>
@@ -1299,7 +1384,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item python" data-category="python">
                               <div class="image-box">
                                  <img src="assets/img/project/proj_4.webp" alt="" loading="lazy">
                               </div>
@@ -1313,7 +1398,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item ml" data-category="ml">
                               <div class="image-box">
                                  <img src="assets/img/project/proj_5.webp" alt="" loading="lazy">
                               </div>
@@ -1328,7 +1413,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item ml" data-category="ml">
                               <div class="image-box">
                                  <img src="assets/img/project/creditcard.webp" alt="" loading="lazy">
                               </div>
@@ -1343,7 +1428,7 @@
                               </div>
                            </div>
 
-                           <div class="portfolio-item branding">
+                           <div class="portfolio-item other" data-category="other">
                               <div class="image-box">
                                  <img src="assets/img/project/usage.webp" alt="" loading="lazy">
                               </div>
