@@ -26,6 +26,7 @@
    <link rel="stylesheet" href="assets/css/backToTop.css">
    <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
    <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="assets/css/project_buttons.css">
    <link rel="stylesheet" href="assets/css/light-mode.css">
    <link rel="stylesheet" href="assets/css/responsive.css">
    <style>
@@ -233,15 +234,16 @@
                <div class="col-md-6">
                   <div class="hero-content-box">
                      <span class="hero-sub-title">I am Tufan Kundu</span>
-                     <h1 class="hero-title">Data Scientist |<br>Data Analyst</h1>
+                     <h1 class="hero-title">Data Scientist |<br>Machine Learning Practitioner</h1>
 
                      <div class="hero-image-box d-md-none text-center">
                         <img src="assets/img/hero/me.webp" alt="Tufan Kundu - Data Scientist" loading="lazy">
                      </div>
 
                      <p class="lead">
-                        I blend data science and storytelling to reveal the insights that drive business transformation
-                        and success.
+                        I turn complex data into actionable insights using machine learning, visualization,
+                        and cloud-ready deployments. I build solutions that solve real problems
+                        and scale beyond proofs of concept.
                      </p>
                      <div class="button-box d-flex flex-wrap align-items-center">
                         <a href="https://drive.google.com/file/d/1BCzjfYIEWnPwO41wU-pk5N2zEUYzdzxX/view?usp=sharing"
@@ -262,7 +264,7 @@
                </div>
                <div class="col-md-6 d-none d-md-block">
                   <div class="hero-image-box text-center">
-                     <img src="assets/img/hero/me.webp" alt="Tufan Kundu - Data Scientist" loading="lazy">
+                     <img src="assets/img/hero/me.webp" alt="Tufan Kundu - Data Scientist" loading="eager">
                   </div>
                </div>
             </div>
@@ -300,6 +302,8 @@
                   </div>
                </div>
             </div>
+
+
 
 
 
@@ -1053,6 +1057,18 @@
             </section>
             <!-- SKILLS SECTION END -->
 
+            <!-- GitHub Activity Graph -->
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="github-chart text-center wow fadeInUp" data-wow-delay=".5s"
+                     style="margin-top: 50px; margin-bottom: 50px;">
+                     <h3 class="section-title" style="font-size: 24px; margin-bottom: 20px;">GitHub Activity</h3>
+                     <img src="https://ghchart.rshah.org/40c463/kindo-tk" alt="Tufan's GitHub Activity Graph"
+                        style="width: 100%; max-width: 800px;" loading="lazy">
+                  </div>
+               </div>
+            </div>
+
             <!-- Project SECTION START -->
             <section class="portfolio-section" id="project-section">
                <div class="container">
@@ -1096,15 +1112,17 @@
                                  <img src="assets/img/project/image_scrapper.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/Image_Scrapper" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Image Scrapper</h3>
-                                    <p>A fast, Streamlit-based image scraping tool that fetches high-quality
-                                       images using DuckDuckGo, with concurrent downloads, live progress tracking,
-                                       and bulk ZIP export.
-                                    </p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Image Scrapper</h3>
+                                 <p>A fast, Streamlit-based image scraping tool that fetches high-quality
+                                    images using DuckDuckGo, with concurrent downloads, live progress tracking,
+                                    and bulk ZIP export.
+                                 </p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/Image_Scrapper" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://imagescrapper.streamlit.app/" class="btn-live" target="_blank"><i
+                                          class="fa-solid fa-up-right-from-square"></i> Live</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1115,13 +1133,13 @@
                                  <img src="assets/img/project/land_cover_classification.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/EuroSAT-LandCover-Ensemble-CNN" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">EuroSAT Landcover Classification</h3>
-                                    <p>A lightweight ensemble deep learning model achieving 98% accuracy on EuroSAT
-                                       land-cover classification using 4-channel Sentinel-2 data.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">EuroSAT Landcover Classification</h3>
+                                 <p>A lightweight ensemble deep learning model achieving 98% accuracy on EuroSAT
+                                    land-cover classification using 4-channel Sentinel-2 data.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/EuroSAT-LandCover-Ensemble-CNN"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1131,13 +1149,15 @@
                                  <img src="assets/img/project/ipl_data_analysis.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/ipl_data_analysis_project" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">IPL Data Analysis using python</h3>
-                                    <p>An interactive Streamlit dashboard for visualizing and analyzing IPL data
-                                       (2008–2024) with dynamic filters, team stats, and player insights.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">IPL Data Analysis using python</h3>
+                                 <p>An interactive Streamlit dashboard for visualizing and analyzing IPL data
+                                    (2008–2024) with dynamic filters, team stats, and player insights.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/ipl_data_analysis_project" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://ipldataanalysisproject.streamlit.app/" class="btn-live"
+                                       target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1147,13 +1167,15 @@
                                  <img src="assets/img/project/laptop_price_predictor.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/laptop_price_predictor" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Laptop Price Prediction</h3>
-                                    <p>Laptop Price Predictor using Machine Learning & Streamlit. End-to-end Data
-                                       Science project with EDA, Feature Engineering, and Model Deployment.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Laptop Price Prediction</h3>
+                                 <p>Laptop Price Predictor using Machine Learning & Streamlit. End-to-end Data
+                                    Science project with EDA, Feature Engineering, and Model Deployment.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/laptop_price_predictor" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://laptoppricepredictorbytk.streamlit.app/" class="btn-live"
+                                       target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1163,13 +1185,13 @@
                                  <img src="assets/img/project/Rainfall.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/rainfall_prediction" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Rainfall Prediction</h3>
-                                    <p>Rainfall Predictor using Machine Learning & Streamlit. End-to-end Data
-                                       Science project with EDA, Feature Engineering, and Model Deployment.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Rainfall Prediction</h3>
+                                 <p>Rainfall Predictor using Machine Learning & Streamlit. End-to-end Data
+                                    Science project with EDA, Feature Engineering, and Model Deployment.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/rainfall_prediction" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1178,13 +1200,15 @@
                                  <img src="assets/img/project/cat_dog.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/Cat_vs_Dog_Classifier/tree/main" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Cat VS Dog Classifier</h3>
-                                    <p>A lightweight deep learning system for Cat vs Dog image classification,
-                                       deployed via Streamlit for real-time prediction.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Cat VS Dog Classifier</h3>
+                                 <p>A lightweight deep learning system for Cat vs Dog image classification,
+                                    deployed via Streamlit for real-time prediction.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/Cat_vs_Dog_Classifier/tree/main"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://catvsdogclassifierbytk.streamlit.app/" class="btn-live"
+                                       target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1193,13 +1217,16 @@
                                  <img src="assets/img/project/Netflix_dashboard_powerBI.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/netflix_dashboard_analysis" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Netflix Dashboard in PowerBI and Tableau</h3>
-                                    <p>An interactive Power BI and Tableau dashboard uncovering trends in Netflix
-                                       content, genres, ratings, and global production insights.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Netflix Dashboard in PowerBI and Tableau</h3>
+                                 <p>An interactive Power BI and Tableau dashboard uncovering trends in Netflix
+                                    content, genres, ratings, and global production insights.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/netflix_dashboard_analysis" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://public.tableau.com/app/profile/tufan.kundu/viz/Netflix_Dashboard_17434217678040/NetfixDashboard"
+                                       class="btn-live" target="_blank"><i class="fa-solid fa-up-right-from-square"></i>
+                                       Live</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1209,58 +1236,69 @@
                                  <img src="assets/img/project/SuperStore_Dashboard_powerBi.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/SuperStore_Sales_Dashboard" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">SuperStore Sales Dashboard</h3>
-                                    <p>Interactive dashboard using PowerBI and Tableau analyzing sales, profit, and
-                                       customer trends across regions and categories.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">SuperStore Sales Dashboard</h3>
+                                 <p>Interactive dashboard using PowerBI and Tableau analyzing sales, profit, and
+                                    customer trends across regions and categories.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/SuperStore_Sales_Dashboard" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://public.tableau.com/app/profile/tufan.kundu/viz/SuperStoreDashboard_17434030909880/Dashboard1?publish=yes"
+                                       class="btn-live" target="_blank"><i class="fa-solid fa-up-right-from-square"></i>
+                                       Live</a>
+                                 </div>
                               </div>
                            </div>
+
+
+                           <div class="portfolio-item other" data-category="other">
+                              <div class="image-box">
+                                 <img src="assets/img/project/slr1.webp" alt="" loading="lazy">
+                              </div>
+                              <div class="content-box">
+                                 <h3 class="portfolio-title">Simple Linear Regression Calculator</h3>
+                                 <p>A web based app to fit data into a simple linear regression model using
+                                    streamlit.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/simple_linear_regression" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://simplelinearregressionbytk.streamlit.app/" class="btn-live"
+                                       target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Live</a>
+                                 </div>
+                              </div>
+                           </div>
+
 
                            <div class="portfolio-item data-analysis" data-category="data-analysis">
                               <div class="image-box">
                                  <img src="assets/img/project/Covid_19_dashboard.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/Covid_19_India_Dashboard/tree/main"
-                                    target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Covid-19 India Dashboard</h3>
-                                    <p>A dynamic Tableau dashboard analyzing Covid-19 trends in India through deaths,
-                                       cases, vaccinations, and demographics from Jan 2020 to Aug 2021.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Covid-19 India Dashboard</h3>
+                                 <p>A dynamic Tableau dashboard analyzing Covid-19 trends in India through deaths,
+                                    cases, vaccinations, and demographics from Jan 2020 to Aug 2021.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/Covid_19_India_Dashboard/tree/main"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://public.tableau.com/app/profile/tufan.kundu/viz/covid_19_dashboard_17445657158090/Covid-19IndiaDashboard?publish=yes"
+                                       class="btn-live" target="_blank"><i class="fa-solid fa-up-right-from-square"></i>
+                                       Live</a>
+                                 </div>
                               </div>
                            </div>
 
-                           <div class="portfolio-item ml" data-category="ml">
-                              <div class="image-box">
-                                 <img src="assets/img/project/slr1.webp" alt="" loading="lazy">
-                              </div>
-                              <div class="content-box">
-                                 <a href="https://simplelinearregressionbytk.streamlit.app/" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Simple Linear Regression Calculator</h3>
-                                    <p>A web based app to fit data into a simple linear regression model using
-                                       streamlit.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
-                              </div>
-                           </div>
 
                            <div class="portfolio-item python" data-category="python">
                               <div class="image-box">
                                  <img src="assets/img/project/voice_assistant.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/virtual_assistant" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Personal virtual Assistant</h3>
-                                    <p>Pogo is an intelligent virtual assistant that helps with tasks like opening
-                                       apps, checking weather, fetching news, playing music, and web searches.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Personal virtual Assistant</h3>
+                                 <p>Pogo is an intelligent virtual assistant that helps with tasks like opening
+                                    apps, checking weather, fetching news, playing music, and web searches.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/virtual_assistant" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1269,13 +1307,13 @@
                                  <img src="assets/img/project/house2.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/house_price_prediction/tree/main" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">House Price Prediction</h3>
-                                    <p>Predict house prices using Linear Regression in a Flask-based end-to-end
-                                       machine learning project.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">House Price Prediction</h3>
+                                 <p>Predict house prices using Linear Regression in a Flask-based end-to-end
+                                    machine learning project.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/house_price_prediction/tree/main"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1285,13 +1323,13 @@
                                  <img src="assets/img/project/hotel_reservation.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/Mentorness/tree/main/Task%202_%20Hotel%20reservation%20analysis%20in%20SQL"
-                                    target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Hotel Reservation Analysis with SQL</h3>
-                                    <p>Analyzing the dataset to uncover patterns for strategic decisions and optimize
-                                       hotel performance.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Hotel Reservation Analysis with SQL</h3>
+                                 <p>Analyzing the dataset to uncover patterns for strategic decisions and optimize
+                                    hotel performance.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/Mentorness/tree/main/Task%202_%20Hotel%20reservation%20analysis%20in%20SQL"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1300,12 +1338,12 @@
                                  <img src="assets/img/project/pizza.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/SQL_projects/tree/main/Pizza_sales_analysis"
-                                    target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Pizza Sales Analysis using SQL</h3>
-                                    <p>This project aims to analyze pizza sales data using SQL to boost sales.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Pizza Sales Analysis using SQL</h3>
+                                 <p>This project aims to analyze pizza sales data using SQL to boost sales.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/SQL_projects/tree/main/Pizza_sales_analysis"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1314,13 +1352,15 @@
                                  <img src="assets/img/project/forest.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/forest_fire" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Forest fire prediction</h3>
-                                    <p>This project uses machine learning to predict the Fire Weather Index (FWI)
-                                       based on various weather conditions and fire indices.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Forest fire prediction</h3>
+                                 <p>This project uses machine learning to predict the Fire Weather Index (FWI)
+                                    based on various weather conditions and fire indices.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/forest_fire" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://forest-fire-z70n.onrender.com/" class="btn-live" target="_blank"><i
+                                          class="fa-solid fa-up-right-from-square"></i> Live</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1329,13 +1369,13 @@
                                  <img src="assets/img/project/search_page.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/job_hunter" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Job Hunter</h3>
-                                    <p>Job Hunter is a web application built using Flask that allows users to search
-                                       for the latest job listings from TimesJobs.com based on their skills.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Job Hunter</h3>
+                                 <p>Job Hunter is a web application built using Flask that allows users to search
+                                    for the latest job listings from TimesJobs.com based on their skills.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/job_hunter" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1344,13 +1384,13 @@
                                  <img src="assets/img/project/proj_1.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/Web_Scrapper" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Flipkart Review Scrapper</h3>
-                                    <p>This is a web scraper built in Python using Flask that allows users to
-                                       retrieve review data for products on Flipkart.com</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Flipkart Review Scrapper</h3>
+                                 <p>This is a web scraper built in Python using Flask that allows users to
+                                    retrieve review data for products on Flipkart.com</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/Web_Scrapper" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1359,13 +1399,13 @@
                                  <img src="assets/img/project/proj_2.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/EDA/tree/main/Diwali_sales" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Diwali sales analysis</h3>
-                                    <p>Performed exploratory data analysis on diwali sales data using Python to
-                                       improve the customer experience.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Diwali sales analysis</h3>
+                                 <p>Performed exploratory data analysis on diwali sales data using Python to
+                                    improve the customer experience.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/EDA/tree/main/Diwali_sales" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1374,13 +1414,15 @@
                                  <img src="assets/img/project/proj_3.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/weatherapp_repo" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Weather Web Application with Flask</h3>
-                                    <p>This project is a user-friendly weather application that provides real-time
-                                       temperature information based on the city entered by the user.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Weather Web Application with Flask</h3>
+                                 <p>This project is a user-friendly weather application that provides real-time
+                                    temperature information based on the city entered by the user.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/weatherapp_repo" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="https://weatherapp-hws1.onrender.com/" class="btn-live" target="_blank"><i
+                                          class="fa-solid fa-up-right-from-square"></i> Live</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1389,12 +1431,12 @@
                                  <img src="assets/img/project/proj_4.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/youtube_video_downloader" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">YouTube Video Downloader Using Python</h3>
-                                    <p>GUI app to download youtube videos using python.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">YouTube Video Downloader Using Python</h3>
+                                 <p>GUI app to download youtube videos using python.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/youtube_video_downloader" class="btn-github"
+                                       target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1403,13 +1445,13 @@
                                  <img src="assets/img/project/proj_5.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/CODSOFT/tree/main/Titanic_Survival_Prediction"
-                                    target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Titanic Survival Prediction</h3>
-                                    <p>Through this project, I have successfully analyzed the Titanic dataset and
-                                       built a machine-learning model to predict passenger survival.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Titanic Survival Prediction</h3>
+                                 <p>Through this project, I have successfully analyzed the Titanic dataset and
+                                    built a machine-learning model to predict passenger survival.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/CODSOFT/tree/main/Titanic_Survival_Prediction"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1418,13 +1460,13 @@
                                  <img src="assets/img/project/creditcard.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/CODSOFT/tree/main/Credit_card_fraud_detection"
-                                    target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">Credit Card Fraud Detection</h3>
-                                    <p> In the Credit Card Fraud Detection project, I developed a machine learning
-                                       model to identify fraudulent credit card transactions.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">Credit Card Fraud Detection</h3>
+                                 <p> In the Credit Card Fraud Detection project, I developed a machine learning
+                                    model to identify fraudulent credit card transactions.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/CODSOFT/tree/main/Credit_card_fraud_detection"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1433,14 +1475,14 @@
                                  <img src="assets/img/project/usage.webp" alt="" loading="lazy">
                               </div>
                               <div class="content-box">
-                                 <a href="https://github.com/kindo-tk/ChatGPT_usage_heatmap/tree/main" target="_blank"
-                                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                                    <h3 class="portfolio-title">ChatGPT Usage Visualization</h3>
-                                    <p>A Python-based visualization tool to create yearly heatmaps of ChatGPT usage,
-                                       showcasing interaction patterns and activity trends using exported
-                                       conversation data.</p>
-                                 </a>
-                                 <i class="flaticon-up-right-arrow"></i>
+                                 <h3 class="portfolio-title">ChatGPT Usage Visualization</h3>
+                                 <p>A Python-based visualization tool to create yearly heatmaps of ChatGPT usage,
+                                    showcasing interaction patterns and activity trends using exported
+                                    conversation data.</p>
+                                 <div class="project-actions">
+                                    <a href="https://github.com/kindo-tk/ChatGPT_usage_heatmap/tree/main"
+                                       class="btn-github" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                 </div>
                               </div>
                            </div>
 
@@ -1493,6 +1535,18 @@
                                  <div class="text-box">
                                     <p>Address</p>
                                     Kolkata, <br>West Bengal, India
+                                 </div>
+                              </li>
+                              <!-- LinkedIn -->
+                              <li class="d-flex flex-wrap align-items-center position-relative wow fadeInRight"
+                                 data-wow-delay=".7s">
+                                 <div class="icon-box">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                 </div>
+                                 <div class="text-box">
+                                    <p>LinkedIn</p>
+                                    <a href="https://www.linkedin.com/in/tufan-kundu-577945221/" target="_blank">Connect
+                                       Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                                  </div>
                               </li>
                            </ul>

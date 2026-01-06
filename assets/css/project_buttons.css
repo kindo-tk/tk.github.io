@@ -1,0 +1,58 @@
+/* Project Action Buttons */
+.project-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.project-actions .btn-github,
+.project-actions .btn-live {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    gap: 8px;
+}
+
+.project-actions .btn-github {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.project-actions .btn-github:hover {
+    background-color: #000;
+    border-color: #000;
+}
+
+.project-actions .btn-live {
+    background: linear-gradient(135deg, var(--tj-theme-primary) 0%, var(--tj-theme-secondary) 100%);
+    color: #fff;
+    border: none;
+}
+
+.project-actions .btn-live:hover {
+    box-shadow: 0 5px 15px rgba(135, 80, 247, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Adjust Content Box for Project Items */
+.portfolio-box .portfolio-item .content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.portfolio-box .portfolio-item .content-box i {
+    display: none;
+    /* Hide the old arrow icon */
+}
+
+.portfolio-title {
+    margin-bottom: 5px;
+}
