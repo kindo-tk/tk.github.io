@@ -110,12 +110,31 @@ Description: Gerold - Personal Portfolio HTML5 Template
 			});
 
 			// filter items on button click
-			$(".filter-button-group").on("click", "button", function () {
-				$(".filter-button-group button").removeClass("active");
+			$("#project-filters").on("click", "button", function () {
+				$(this).siblings().removeClass("active");
 				$(this).addClass("active");
 
 				var filterValue = $(this).attr("data-filter");
 				$grid.isotope({ filter: filterValue });
+			});
+		});
+
+		/*------------------------------------------------------
+		/  Skills Filter
+		/------------------------------------------------------*/
+		$(".skills-widget").imagesLoaded(function () {
+			var $skillsGrid = $(".skills-widget").isotope({
+				itemSelector: ".skill-item",
+				layoutMode: "fitRows"
+			});
+
+			// filter items on button click
+			$("#skill-filters").on("click", "button", function () {
+				$(this).siblings().removeClass("active");
+				$(this).addClass("active");
+
+				var filterValue = $(this).attr("data-filter");
+				$skillsGrid.isotope({ filter: filterValue });
 			});
 		});
 

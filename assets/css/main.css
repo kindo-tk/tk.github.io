@@ -2072,14 +2072,22 @@ body.loaded {
 }
 
 .skills-widget .skill-item {
-	max-width: 180px;
-	width: 100%;
+	width: 180px;
+	/* Fixed width */
+	margin: 0 10px 20px 10px;
+	/* Add margin for spacing */
 	text-align: center;
 }
 
 .skills-widget .skill-inner {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	border-radius: 25px;
-	padding: 40px 15px 30px;
+	padding: 20px;
 	background: var(--tj-theme-accent-2);
 	border: 1px solid transparent;
 	margin-bottom: 15px;
