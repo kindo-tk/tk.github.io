@@ -1,13 +1,3 @@
-/*-----------------------------------------------------------------------------------
-
-Theme Name: Gerold - Personal Portfolio HTML5 Template
-Theme URI: https://themejunction.net/html/gerold/demo/
-Author: Theme-Junction
-Author URI: https://themeforest.net/user/theme-junction
-Description: Gerold - Personal Portfolio HTML5 Template
-
------------------------------------------------------------------------------------
-
 /***************************************************
 ==================== JS INDEX ======================
 ****************************************************
@@ -122,20 +112,22 @@ Description: Gerold - Personal Portfolio HTML5 Template
 		/*------------------------------------------------------
 		/  Skills Filter
 		/------------------------------------------------------*/
-		$(".skills-widget").imagesLoaded(function () {
-			var $skillsGrid = $(".skills-widget").isotope({
-				itemSelector: ".skill-item",
-				layoutMode: "fitRows"
-			});
+		/*------------------------------------------------------
+		/  Skills Filter (Custom Layout for Centering)
+		/------------------------------------------------------*/
+		// Use simple jQuery filtering instead of Isotope to allow Flexbox centering
+		$("#skill-filters").on("click", "button", function () {
+			$(this).siblings().removeClass("active");
+			$(this).addClass("active");
 
-			// filter items on button click
-			$("#skill-filters").on("click", "button", function () {
-				$(this).siblings().removeClass("active");
-				$(this).addClass("active");
+			var filterValue = $(this).attr("data-filter");
 
-				var filterValue = $(this).attr("data-filter");
-				$skillsGrid.isotope({ filter: filterValue });
-			});
+			if (filterValue === "*") {
+				$(".skills-widget .skill-item").fadeIn();
+			} else {
+				$(".skills-widget .skill-item").hide();
+				$(".skills-widget .skill-item").filter(filterValue).fadeIn();
+			}
 		});
 
 
