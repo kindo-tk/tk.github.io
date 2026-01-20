@@ -89,6 +89,7 @@
 		/  Portfolio Filter
 		/------------------------------------------------------*/
 		$(".portfolio-box").imagesLoaded(function () {
+			var initialFilter = $("#project-filters button.active").attr("data-filter") || "*";
 			var $grid = $(".portfolio-box").isotope({
 				// options
 				masonry: {
@@ -97,6 +98,7 @@
 				},
 				itemSelector: ".portfolio-box .portfolio-item",
 				percentPosition: true,
+				filter: initialFilter,
 			});
 
 			// filter items on button click
